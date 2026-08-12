@@ -1,3 +1,0 @@
-# Solana OFT Deployment
-
-Placeholder
