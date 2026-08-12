@@ -1,0 +1,27 @@
+[toolchain]
+anchor_version = "1.0.2"
+solana_version = "3.1.10"
+
+[features]
+seeds = false
+resolution = false
+skip-lint = false
+
+[workspace]
+members = [
+    "programs/console_oft",
+    "programs/console_transfer_hook",
+    "tests/programs/example_composer"
+]
+
+[programs.localnet]
+console_oft = "9UovNrJD8pQyBLheeHNayuG1wJSEAoxkmM14vw5gcsTT"
+console_transfer_hook = "Hook111111111111111111111111111111111111111"
+example_composer = "Comp111111111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/dev/null"

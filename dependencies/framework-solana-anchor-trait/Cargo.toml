@@ -1,0 +1,21 @@
+[package]
+name = "anchor-trait"
+version = "0.1.0"
+edition = "2021"
+description = "Trait-like instruction interfaces for Anchor Solana programs with compile-time enforcement and default implementations"
+
+[features]
+idl-build = []
+
+[dependencies]
+itertools = "0.14"
+proc-macro2 = "1.0"
+quote = "1.0"
+
+[dependencies.syn]
+version = "2.0"
+features = [ "full", "parsing" ]
+
+[dev-dependencies]
+insta = "1.41"
+prettyplease = "0.2"

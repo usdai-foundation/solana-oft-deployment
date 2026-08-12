@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "programs/console_oft",
+    "programs/console_transfer_hook",
+    "tests/programs/example_composer"
+]
+resolver = "2"
+
+
+[profile.release]
+overflow-checks = true
